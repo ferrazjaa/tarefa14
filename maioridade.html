@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maioridade</title>
+
+    <link rel="stylesheet" href="css\reset.css">
+</head>
+<body>
+    <!-- Faça um programa JavaScript em que o usuário informará a sua idade e o programa emitirá uma mensagem(alert) dizendo se o usuário é ou não menor de idade.  -->
+
+    <main>
+        <h1>Maioridade</h1>
+        <label for="idade">Digite a sua idade:</label>
+        <input type="number" name="idade" id="idade"  min="0">
+        <input type="button" value="Verificar maioridade" onclick="verificarMaioridade()">
+        <p id="resultado"></p>
+        <button><a href="index.html">Voltar</a></button>
+    </main>
+
+    <script>
+        function verificarMaioridade(){
+            let idade = parseInt(document.getElementById('idade').value)
+
+            if (idade < 18) {
+            //    return document.getElementById('resultado').innerHTML = `Com ${idade} você é menor de idade` 
+               alert('Você é menor de idade!')
+            } else {
+                // return document.getElementById('resultado').innerHTML = `Com ${idade} você é maior de idade` 
+               alert('Você é maior de idade!')
+            }
+        }
+    </script>
+    
+</body>
+</html>

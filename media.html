@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+
+    <link rel="stylesheet" href="css\reset.css">
+</head>
+
+
+<body>
+    <!-- Faça um programa JavaScript que receba 3 números informados pelo usuário e em seguida apresente na tela qual é a média destes números. -->
+     
+    <label for="num1">Digite o primeiro número:</label>
+    <input type="number" name="num1" id="num1">
+
+    <label for="num2">Digite o segundo número:</label>
+    <input type="number" name="num2" id="num2">
+
+    <label for="num3">Digite o terceiro número:</label>
+    <input type="number" name="num3" id="num3">
+    <input type="button" value="Calcular" onclick="calcularMedia()">
+    <p id="resultado"></p>
+    
+    <button><a href="index.html">Voltar</a></button>
+
+    <script>
+
+        function calcularMedia() {
+        
+            
+            /* pegando os valores do formulário */
+            let nota1 = document.getElementById('num1').value
+            let nota2 = document.getElementById('num2').value
+            let nota3 = document.getElementById('num3').value
+           
+                  
+        
+           /* Caso haja elemento vazio, se tornará zero  */
+           nota1 == '' ? nota1 = 0 : nota1 = parseFloat(nota1)
+           nota2 == '' ? nota2 = 0 : nota2 = parseFloat(nota2)
+           nota3 == '' ? nota3 = 0 : nota3 = parseFloat(nota3)
+                  
+          
+        
+            /* cálculo das médias */
+            let media = ((nota1 + nota2 + nota3) / 3)
+        
+            /* média com apenas duas casas decimais */
+            media = media.toFixed(2)
+        
+           
+          
+            document.getElementById('num1').value = ''
+            /* Limpar números na área do formulário */
+            document.getElementById('num2').value = ''
+            document.getElementById('num3').value = ''
+                   
+            
+        
+            return document.getElementById('resultado').innerHTML = `A média de ${nota1}, ${nota2}, ${nota3} é:  <strong> ${media} </strong>`
+            
+        }</script>
+</body>
+</html>

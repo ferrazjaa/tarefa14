@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mês</title>
+
+    <link rel="stylesheet" href="css\reset.css">
+</head>
+<body>
+    <!-- 
+    Faça um programa JavaScript para definir qual é o mês com base em um número fornecido pelo usuário. Mostre na tela o mês correspondente ao valor informado. O valor informado pelo usuário deve estar dentro do intervalo que vai de 1 a 12 somente, caso contrario exibir mensagem dizendo que o número é inválido.
+    -->
+    <main>
+        <h1>Verificar o mês</h1>
+        <p>Entre com um número entre 1 e 12 e verifique o mês correspondente.</p>
+        <label for="mes">Escolha o mês</label>
+        <input type="number" name="mes" id="mes">
+        <input type="button" value="Verificar mês" onclick="verificarMes()">
+        
+        <button><a href="index.html">Voltar</a></button>
+
+        <p id="resultado"></p>
+    </main>
+
+    <script>
+        
+        function verificarMes() {
+            let mes = document.getElementById('mes').value
+            let nomeMes
+            switch (mes) {
+                case '1':
+                    nomeMes= 'Janeiro'
+                    break;
+            
+                case '2':
+                    nomeMes= 'Fevereiro'
+                    break;
+            
+                case '3':
+                    nomeMes= 'Março'
+                    break;
+            
+                case '4':
+                    nomeMes= 'Abril'
+                    break;
+            
+                case '5':
+                    nomeMes= 'Maio'
+                    break;
+            
+                case '6':
+                    nomeMes= 'Junho'
+                    break;
+            
+                case '7':
+                    nomeMes= 'Julho'
+                    break;
+            
+                case '8':
+                    nomeMes= 'Agosto'
+                    break;
+            
+                case '9':
+                    nomeMes= 'Setembro'
+                    break;
+            
+                case '10':
+                    nomeMes= 'Outubro'
+                    break;
+            
+                case '11':
+                    nomeMes= 'Novembro'
+                    break;
+            
+                case '12':
+                    nomeMes= 'Dezembro'
+                    break;
+            
+                default:
+                    return alert('Digite um valor válido')
+                    
+                    break;
+            }
+
+            return document.getElementById('resultado').innerHTML = `${mes} corresponde ao mês de <span>${nomeMes}</span>`
+            
+        }
+    </script>
+    
+    
+</body>
+</html>
