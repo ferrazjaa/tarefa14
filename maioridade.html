@@ -31,12 +31,16 @@
         function verificarMaioridade(){
             let idade = parseInt(document.getElementById('idade').value)
 
-            if (idade < 18) {
-            //    return document.getElementById('resultado').innerHTML = `Com ${idade} você é menor de idade` 
-               alert('Você é menor de idade!')
-            } else {
-                // return document.getElementById('resultado').innerHTML = `Com ${idade} você é maior de idade` 
-               alert('Você é maior de idade!')
+            if (idade < 0) {
+    
+               alert('Digite um valor válido!')
+               
+            } else if (idade < 18){
+                alert('Você é menor de idade!')
+            }
+            
+            else {
+                alert('Você é maior de idade!')
             }
         }
     </script>
