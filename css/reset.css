@@ -5,35 +5,33 @@
     box-sizing: border-box;
 }
 
-:root{
-    font-size: 62.5%;
+body{
+    font-family: "Roboto", sans-serif;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
+:root{
+    font-size: 62.5%;
+    --default-cor: #0A4F4F;
+}
+
+a{
+    text-decoration: none;
 }
 
 h1{
     font-size: 5.5rem;
     text-align: center;
     margin: 5.5rem;
+    font-weight: 400;
 }
 
-label, button{
+button{
     font-size: 3rem;  
 }
 
-label{
-    align-self: center;
-    width: 25%;
-}
 
-/* input{
-    font-size:2.3rem;
-    padding: 1.1rem;
-    width: 8%;
-    text-align: center;
-    border: none;
-    border-radius: 1rem;
+
+
+
+/* 
 } */

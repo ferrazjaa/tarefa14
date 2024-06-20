@@ -1,0 +1,60 @@
+
+
+body{
+    background-color: var(--default-cor);
+    color: #fff;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    justify-content: center;
+
+}
+
+.item{
+    padding: 2rem;
+    flex: 33%;
+    border: 0.1rem solid black;
+    margin-right: 2rem;
+    border-radius: 2rem;
+    align-items: center;
+    text-align: center;
+    
+}
+
+h2{
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+p{
+    font-size: 1.65rem;
+    margin-bottom: 4rem;
+}
+
+a{
+    padding: 0.5rem;
+    color: var(--default-cor);
+}
+a:visited{
+    color: var(--default-cor);
+}
+
+button{
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+a:hover{
+    color: #fff;
+}
+button:hover{
+    background-color: var(--default-cor);
+    color: #fff;
+}

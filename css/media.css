@@ -1,0 +1,59 @@
+#voltar{
+    background-color: var(--default-cor);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+#voltar a{
+    color: #fff;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+}
+
+h1{
+    color: var(--default-cor);
+}
+
+.item{
+    flex: 1;
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+#campo{
+    background-color: var(--default-cor);
+    color: #fff;
+}
+
+
+
+label{
+    font-size: 3rem;
+}
+input{
+    font-size:2rem;
+    width: 10rem;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+    color: var(--default-cor);
+    padding: 0.5rem;
+}
+
+#botao{
+    background-color: #fff;
+    color: var(--default-cor);
+    font-weight: bold;
+    font-size: 2.5rem;
+    width: 12rem;
+
+}
+
+p{
+    font-size:4rem;
+    color: var(--default-cor);
+    text-align: center;
+}
