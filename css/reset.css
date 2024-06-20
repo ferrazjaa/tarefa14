@@ -29,6 +29,14 @@ button{
     font-size: 3rem;  
 }
 
+#voltar{
+    background-color: var(--default-cor);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+#voltar a{
+    color: #fff;
+}
 
 
 

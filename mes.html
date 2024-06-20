@@ -6,6 +6,7 @@
     <title>Mês</title>
 
     <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css\mes.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,14 +17,15 @@
     <!-- 
     Faça um programa JavaScript para definir qual é o mês com base em um número fornecido pelo usuário. Mostre na tela o mês correspondente ao valor informado. O valor informado pelo usuário deve estar dentro do intervalo que vai de 1 a 12 somente, caso contrario exibir mensagem dizendo que o número é inválido.
     -->
+    <button id="voltar"><a href="index.html">Voltar</a></button>
     <main>
         <h1>Verificar o mês</h1>
         <p>Entre com um número entre 1 e 12 e verifique o mês correspondente.</p>
         <label for="mes">Escolha o mês</label>
         <input type="number" name="mes" id="mes">
-        <input type="button" value="Verificar mês" onclick="verificarMes()">
+        <input id="botao" type="button" value="Verificar mês" onclick="verificarMes()">
         
-        <button><a href="index.html">Voltar</a></button>
+        
 
         <p id="resultado"></p>
     </main>

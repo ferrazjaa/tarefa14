@@ -6,6 +6,7 @@
     <title>Maioridade</title>
 
     <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css\maioridade.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,14 +16,15 @@
 </head>
 <body>
     <!-- Faça um programa JavaScript em que o usuário informará a sua idade e o programa emitirá uma mensagem(alert) dizendo se o usuário é ou não menor de idade.  -->
-
+    <button id="voltar"><a href="index.html">Voltar</a></button>
+    
     <main>
         <h1>Maioridade</h1>
         <label for="idade">Digite a sua idade:</label>
         <input type="number" name="idade" id="idade"  min="0">
-        <input type="button" value="Verificar maioridade" onclick="verificarMaioridade()">
-        <p id="resultado"></p>
-        <button><a href="index.html">Voltar</a></button>
+        <input type="button" value="Verificar maioridade" onclick="verificarMaioridade()" id="botao">
+       
+        
     </main>
 
     <script>
